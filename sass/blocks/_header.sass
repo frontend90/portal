@@ -1,0 +1,68 @@
+.header 
+  & .header-top 
+    background: #eceef4
+    padding: 20px 0 
+    & .header-top-wrap 
+      display: flex 
+      align-items: center
+      justify-content: space-between
+      & .block 
+        & button
+          border-radius: 5px 
+          padding: 6px 8px 6px 47px  
+          +bold 
+          font-size: 12px 
+          position: relative
+          background: #ffffff
+        & .blog
+          &::before
+            content: ''
+            position: absolute
+            background: url(../img/header/top/1.png) no-repeat
+            width: 19px 
+            height: 19px
+            left: 8px  
+        & .jobs
+          &::before
+            content: ''
+            position: absolute
+            background: url(../img/header/top/2.png) no-repeat
+            width: 19px 
+            height: 19px
+            left: 8px  
+        & .support
+          &::before
+            content: ''
+            position: absolute
+            background: url(../img/header/top/3.png) no-repeat
+            width: 19px 
+            height: 19px
+            left: 8px  
+        & .arabic
+          &::before
+            content: ''
+            position: absolute
+            background: url(../img/header/top/4.png) no-repeat
+            width: 19px 
+            height: 19px
+            left: 8px  
+        & a 
+          border-right: 1px solid #dee0e6
+          padding: 0 20px 
+          & .fab 
+            +brand 
+            font-size: 20px 
+        & .facebook 
+          border-left: 1px solid #dee0e6
+          & .fab 
+            color: #2b75b2
+        & .twitter
+          & .fab 
+            color: #1faae2
+        & .instagram
+          & .fab 
+            color: #26658e
+        & .google 
+          & .fab 
+            color: #dd4070
+           
