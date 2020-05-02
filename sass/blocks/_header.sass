@@ -1,7 +1,6 @@
 .header 
   & .header-top 
     background: #eceef4
-    padding: 20px 0 
     & .header-top-wrap 
       display: flex 
       align-items: center
@@ -48,7 +47,8 @@
             left: 8px  
         & a 
           border-right: 1px solid #dee0e6
-          padding: 0 20px 
+          padding: 20px 20px
+          display: inline-block  
           & .fab 
             +brand 
             font-size: 20px 
@@ -65,4 +65,144 @@
         & .google 
           & .fab 
             color: #dd4070
+  & .header-middle 
+    padding: 65px 0 
+    & .header-middle-wrap 
+      display: flex 
+      align-items: center
+      justify-content: space-between
+      & .logo 
+        padding: 25px 0 25px 160px 
+        & h5 
+          +reg 
+          font-size: 41px 
+          color: #3687c4
+          font-weight: normal
+      & .contact
+        padding: 0 30px 
+        position: relative
+        & a 
+          padding: 0 20px 
+          border-right: 1px solid #bcbec3 
+          & .fas 
+            +solid 
+            font-size: 25px 
+            color: #6d6e71
+            transition: .3s linear 
+            &:hover
+              color: #1faae2
+        & .phone 
+          &:hover::before 
+            transition: opacity 1s
+            opacity: 1
+            visibility: visible
+          &:before 
+            content: '+380745768794'
+            position: absolute
+            bottom: calc(100% + 15px)
+            left: 0
+            width: 100%
+            border: 2px solid #d4d4d5
+            border-radius: 5px 
+            text-align: center
+            padding: 15px 0
+            color: #6d6e71 
+            cursor: default
+            opacity: 0
+            visibility: hidden
+        & .tag
+          &:hover::before 
+            transition: opacity 1s
+            opacity: 1
+            visibility: visible
+          &:before 
+            content: 'Saudi Arabia, Alreyadah'
+            position: absolute
+            bottom: calc(100% + 15px)
+            left: 0
+            width: 100%
+            border: 2px solid #d4d4d5
+            border-radius: 5px 
+            text-align: center
+            padding: 15px 0
+            color: #6d6e71 
+            cursor: default
+            opacity: 0
+            visibility: hidden
+        & .email 
+          border-right: none 
+          &:hover::before 
+            transition: opacity 1s
+            opacity: 1
+            visibility: visible
+          &:before 
+            content: 'example@gmail.com'
+            position: absolute
+            bottom: calc(100% + 15px)
+            left: 0
+            width: 100%
+            border: 2px solid #d4d4d5
+            border-radius: 5px 
+            text-align: center
+            padding: 15px 0
+            color: #6d6e71 
+            opacity: 0
+            visibility: hidden
+  & .header-nav 
+    border-top: 1px solid #eceef4
+    & .header-nav-wrap 
+      display: flex 
+      align-items: center
+      justify-content: space-between
+      & .menu 
+        & .burger 
+          display: none 
+        & .menu-link 
+          & a 
+            +bold 
+            color: #6d6e71
+            font-size: 13px 
+            border-right: 1px solid #eceef4
+            display: inline-block 
+            padding: 35px 20px 
+            transition: 0.3s linear 
+            position: relative
+            &:hover
+              color: #1faae2
+            &:hover::before 
+              opacity: 1
+              visibility: visible
+              transition: opacity 1s
+            &:last-of-type
+              border-right: none 
+            &::before
+              content: ''
+              position: absolute
+              left: 50%
+              transform: translateX(-50%)
+              bottom: 0
+              border-bottom: 10px solid #1faae2
+              border-left: 17px solid transparent 
+              border-right: 17px solid transparent 
+              opacity: 0
+              visibility: hidden
+      & .search
+        & form 
+          display: flex
+          align-items: center
+          & a 
+
+            & .fas 
+              +solid 
+              font-size: 25px 
+              color: #6d6e71
+          & input 
+            font-size: 15px 
+            margin-left: 10px 
+            width: 160px 
+
+
+
+            
+
            
