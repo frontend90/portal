@@ -200,6 +200,68 @@
             font-size: 15px 
             margin-left: 10px 
             width: 160px 
+  & .header-slider-wrap 
+    position: relative
+    background: url(../img/header/bg.png) no-repeat 
+    background-size: cover 
+    background-position: center 
+    height: 885px 
+    width: 100%
+    top: 0
+    & .header-slider 
+      & .slick-list 
+        overflow: hidden
+        & .slick-track 
+          display: flex 
+          & .header-slider-block 
+            position: relative
+            height: 885px 
+            width: 100%
+            & .title 
+              position: absolute
+              top: 50%
+              left: 50%
+              transform: translate(-50%,-50%)
+              z-index: 1
+              & h3 
+                color: #ffffff
+                +bold 
+                font-size: 58px 
+                text-shadow: .5px .9px 8px rgba(#111111,.15)
+              & h4 
+                color: #ffffff
+                font-size: 44px 
+                text-shadow: .5px .9px 2px rgba(#111111,.15)
+                padding-left: 110px 
+                position: relative
+                &::before
+                  content: '&'
+                  position: absolute
+                  bottom: 0
+                  left: 0
+                  font-size: 140px 
+                  z-index: -1
+                  color: #bbedff
+                  line-height: 1
+    & button 
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      & .fas 
+        +solid 
+        background: #f4f4f4
+        padding: 20px 10px 
+        color: #d4d4d4
+        font-size: 25px 
+        transition: .3s linear 
+        &:hover
+          color: #6d6e71 
+    & .header-arrow-left 
+      left: 100px 
+    & .header-arrow-right 
+      right: 100px 
+
+
 
 
 

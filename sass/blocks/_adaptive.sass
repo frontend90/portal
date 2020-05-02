@@ -1,6 +1,39 @@
 @media screen and ( max-width: 1180px )
   .container 
     max-width: 95%
+@media screen and ( max-width: 1520px )
+  .header 
+    & .header-slider-wrap 
+      & .header-slider 
+        & .slick-list 
+          & .slick-track
+            & .header-slider-block 
+              & .title 
+                & h3 
+                  font-size: 40px 
+                & h4 
+                  font-size: 30px
+                  padding-left: 90px  
+                  &::before
+                    font-size: 100px
+@media screen and ( max-width: 1065px )
+  .header 
+    & .header-slider-wrap 
+      & .header-slider 
+        & .slick-list 
+          & .slick-track
+            & .header-slider-block 
+              & .title 
+                & h3 
+                  font-size: 40px 
+                & h4 
+                  font-size: 30px
+                  padding-left: 0px 
+                  &::before
+                    left: 50%
+                    transform: translateX(-50%)
+      & button 
+        display: none 
 @media screen and ( max-width: 990px )
   .header 
     & .header-nav 
@@ -13,6 +46,20 @@
           margin-top: 50px 
           & form 
             justify-content: center
+@media screen and ( max-width: 930px )
+  .header 
+    & .header-slider-wrap 
+      & .header-slider 
+        & .slick-list 
+          & .slick-track
+            & .header-slider-block 
+              & .title 
+                & h3 
+                  font-size: 30px 
+                & h4 
+                  font-size: 20px
+                  &::before
+                    font-size: 70px 
 @media screen and ( max-width: 785px )
   .header 
     & .header-nav 
@@ -83,6 +130,20 @@
                 visibility: hidden
         & .search 
           margin-top: 0
+@media screen and ( max-width: 700px )
+  .header 
+    & .header-slider-wrap 
+      & .header-slider 
+        & .slick-list 
+          & .slick-track
+            & .header-slider-block 
+              & .title 
+                & h3 
+                  font-size: 20px 
+                & h4 
+                  font-size: 16px
+                  &::before
+                    font-size: 50px 
 @media screen and ( max-width: 660px )
   .header 
     & .header-top 
@@ -117,6 +178,22 @@
             &:hover::before
               opacity: 0
               visibility: hidden 
+@media screen and ( max-width: 475px )
+  .header 
+    & .header-slider-wrap 
+      & .header-slider 
+        & .slick-list 
+          & .slick-track
+            & .header-slider-block 
+              & .title 
+                & h3 
+                  font-size: 16px 
+                  white-space: nowrap
+                & h4 
+                  font-size: 13px
+                  white-space: nowrap
+                  &::before
+                    font-size: 40px 
 @media screen and ( max-width: 390px )
   .header 
     & .header-top 
