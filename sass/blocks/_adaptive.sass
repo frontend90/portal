@@ -16,6 +16,15 @@
                   padding-left: 90px  
                   &::before
                     font-size: 100px
+@media screen and ( max-width: 1180px )
+  .team 
+    & .team-wrap 
+      flex-wrap: wrap
+      justify-content: space-around
+      margin-top: 35px 
+      & .card 
+        flex-basis: 35%
+        margin-top: 50px 
 @media screen and ( max-width: 1140px )
   .about 
     padding-top: 0
@@ -183,6 +192,17 @@
           margin-top: 20px 
           &:first-of-type
             margin-top: 0
+@media screen and ( max-width: 650px )
+  .team 
+    & .team-wrap 
+      flex-wrap: wrap
+      justify-content: center
+      flex-direction: column 
+      margin-top: 35px 
+      & .card 
+        flex-basis: 50%
+        margin: auto
+        margin-top: 50px 
 @media screen and ( max-width: 600px )
   .header 
     & .header-middle 
@@ -218,6 +238,14 @@
         white-space: nowrap
         &:last-of-type
           margin-top: 10px 
+@media screen and ( max-width: 580px )
+  .team 
+    & .title 
+      & .img 
+        display: none 
+      & .content 
+        margin-left: 0
+        text-align: center
 @media screen and ( max-width: 535px )
   .projects 
     & .projects-nav
@@ -289,6 +317,12 @@
           & button 
             &:last-of-type
               margin-top: 10px 
+@media screen and ( max-width: 360px )
+  .team 
+    & .title 
+      & .content 
+        & h5 
+          font-size: 30px 
 
   
   

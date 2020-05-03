@@ -1,0 +1,51 @@
+.team 
+  padding: 45px 0 100px 0 
+  & .title 
+    display: flex 
+    align-items: center
+    justify-content: center
+    & .content 
+      margin-left: 45px 
+      & h5 
+        +bold 
+        font-size: 44px 
+      & p 
+        max-width: 445px 
+        font-size: 17px 
+  & .team-wrap 
+    margin-top: 85px 
+    display: flex 
+    justify-content: space-between
+    & .card 
+      width: 280px 
+      background: #f5f5f5
+      border-radius: 5px 
+      padding: 45px 0 25px 0
+      & .img 
+        text-align: center
+      & .name 
+        margin-top: 35px 
+        text-align: center
+        & h6 
+          +bold 
+          font-size: 24px 
+        & p 
+          font-size: 17px 
+      & .social 
+        margin-top: 40px 
+        background: #ffffff
+        display: flex 
+        align-items: center
+        justify-content: center
+        padding: 20px 0 
+        & a 
+          margin-left: 25px 
+          &:first-of-type
+            margin-left: 0
+          & .fab 
+            +brand 
+            font-size: 23px 
+            color: #cdcdcd
+            transition: .3s linear 
+            &:hover
+              color: #6d6e71
