@@ -1,0 +1,44 @@
+.work 
+  padding-top: 70px 
+  padding-bottom: 95px 
+  & .title 
+    display: flex 
+    align-items: center
+    justify-content: center
+    & .content 
+      margin-left: 30px 
+      & h5 
+        +bold 
+        font-size: 44px 
+      & p 
+        font-size: 17px 
+  & .work-wrap 
+    margin-top: 95px 
+    display: flex 
+    justify-content: space-between
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 1px 
+      height: 100%
+      background: #eaeced
+      left: 50%
+      transform: translateX(-50%)
+    & .block 
+      & .box 
+        display: flex 
+        margin-top: 100px 
+        &:first-of-type
+          margin-top: 0
+        & .content 
+          margin-left: 30px 
+          max-width: 390px 
+          & h6 
+            +bold 
+            font-size: 24px 
+          & p 
+            margin-top: 10px 
+            text-align: justify
+      
+            

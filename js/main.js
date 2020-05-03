@@ -34,6 +34,7 @@ $('.header-slider').slick({
   prevArrow: $('.header-arrow-left'),
   nextArrow: $('.header-arrow-right'),
   dots: false,
+  autoplay: true,
   responsive: [{
     breakpoint: 1066,
     settings: {

@@ -428,6 +428,120 @@ body.no-scroll {
   right: 100px;
 }
 
+.about {
+  padding-top: 25px;
+  padding-bottom: 85px;
+  background: url(../img/about/line.png) bottom no-repeat;
+}
+
+.about .about-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .about-wrap .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .about-wrap .block .content {
+  max-width: 390px;
+  margin-left: 30px;
+}
+
+.about .about-wrap .block .content h5 {
+  font-family: 'OpenSans-Bold';
+  font-size: 26px;
+}
+
+.about .about-wrap .block .content p {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.work {
+  padding-top: 70px;
+  padding-bottom: 95px;
+}
+
+.work .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.work .title .content {
+  margin-left: 30px;
+}
+
+.work .title .content h5 {
+  font-family: 'OpenSans-Bold';
+  font-size: 44px;
+}
+
+.work .title .content p {
+  font-size: 17px;
+}
+
+.work .work-wrap {
+  margin-top: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.work .work-wrap::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #eaeced;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.work .work-wrap .block .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+}
+
+.work .work-wrap .block .box:first-of-type {
+  margin-top: 0;
+}
+
+.work .work-wrap .block .box .content {
+  margin-left: 30px;
+  max-width: 390px;
+}
+
+.work .work-wrap .block .box .content h6 {
+  font-family: 'OpenSans-Bold';
+  font-size: 24px;
+}
+
+.work .work-wrap .block .box .content p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
 @media screen and (max-width: 1180px) {
   .container {
     max-width: 95%;
@@ -444,6 +558,50 @@ body.no-scroll {
   }
   .header .header-slider-wrap .header-slider .slick-list .slick-track .header-slider-block .title h4::before {
     font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .about {
+    padding-top: 0;
+  }
+  .about .about-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about .about-wrap .block {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50px;
+  }
+  .about .about-wrap .block:first-of-type {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .work .work-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .work .work-wrap::before {
+    display: none;
+  }
+  .work .work-wrap .block {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-top: 100px;
+  }
+  .work .work-wrap .block:first-of-type {
+    margin-top: 0;
+  }
+  .work .work-wrap .block .box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -658,6 +816,33 @@ body.no-scroll {
   }
   .header .header-slider-wrap .header-slider .slick-list .slick-track .header-slider-block .title h4::before {
     font-size: 40px;
+  }
+  .work .title {
+    text-align: center;
+  }
+  .work .title .img {
+    display: none;
+  }
+  .work .title .content h5 {
+    font-size: 30px;
+  }
+  .work .work-wrap .block .box .img {
+    display: none;
+  }
+  .work .work-wrap .block .box .content {
+    margin-left: 0;
+  }
+  .work .work-wrap .block .box .content h6 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about .about-wrap .block .img {
+    display: none;
+  }
+  .about .about-wrap .block .content {
+    margin-left: 0;
   }
 }
 

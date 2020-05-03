@@ -16,6 +16,30 @@
                   padding-left: 90px  
                   &::before
                     font-size: 100px
+@media screen and ( max-width: 1140px )
+  .about 
+    padding-top: 0
+    & .about-wrap 
+      flex-wrap: wrap
+      & .block 
+        flex-basis: 100%
+        justify-content: center
+        margin-top: 50px 
+        &:first-of-type
+          margin-top: 0
+@media screen and ( max-width: 1100px )
+  .work 
+    & .work-wrap 
+      flex-wrap: wrap
+      &::before
+        display: none 
+      & .block 
+        flex-basis: 100%
+        margin-top: 100px 
+        &:first-of-type
+          margin-top: 0
+        & .box 
+          justify-content: center
 @media screen and ( max-width: 1065px )
   .header 
     & .header-slider-wrap 
@@ -194,6 +218,31 @@
                   white-space: nowrap
                   &::before
                     font-size: 40px 
+  .work 
+    & .title 
+      text-align: center
+      & .img 
+        display: none 
+      & .content 
+        & h5 
+          font-size: 30px 
+    & .work-wrap 
+      & .block 
+        & .box 
+          & .img 
+            display: none 
+          & .content 
+            margin-left: 0
+            & h6 
+              font-size: 20px 
+@media screen and ( max-width: 400px )
+  .about 
+    & .about-wrap 
+      & .block 
+        & .img 
+          display: none 
+        & .content 
+          margin-left: 0
 @media screen and ( max-width: 390px )
   .header 
     & .header-top 
