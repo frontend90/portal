@@ -1,0 +1,95 @@
+.projects 
+  background: #efefef
+  position: relative 
+  padding-bottom: 105px 
+  &::before
+    content: ''
+    position: absolute
+    top: -12px
+    left: 0
+    width: 100%
+    height: 22px 
+    border-radius: 100%
+    z-index: -1
+    background: #efefef
+  & .title 
+    display: flex 
+    align-items: center
+    justify-content: center
+    padding-top: 35px 
+    & .content 
+      margin-left: 30px 
+      & h5 
+        +bold 
+        font-size: 44px 
+      & p 
+        font-size: 17px 
+        line-height: 1.4 
+        max-width: 335px 
+  & .projects-nav
+    margin-top: 85px 
+    text-align: center
+    & a 
+      padding: 10px 25px
+      border-radius: 5px 
+      border: 2px solid #cecece
+      margin-left: 10px
+      +bold 
+      font-size: 15px 
+      color: #bbbbbb
+      transition: .3s linear 
+      &.project-active 
+        background: #ffffff
+        border-color: transparent 
+        color: #6d6e71
+      &:hover
+        color: #6d6e71
+        background: #ffffff
+        border-color: transparent  
+      &:first-of-type
+        margin-left: 0 
+  & .projects-wrap 
+    margin-top: 30px 
+    display: flex 
+    justify-content: center
+    flex-wrap: wrap
+    & .card 
+      width: 280px 
+      background: #ffffff
+      margin-left: 6px
+      margin-right: 6px 
+      margin-top: 20px 
+      border-radius: 5px 
+      & .img 
+        width: 250px 
+        height: 210px 
+        margin: 15px auto 0
+        & img 
+          width: 100%
+          height: 100%
+          border-radius: 5px 
+      & .card-wrap
+        display: flex 
+        align-items: center
+        justify-content: space-around
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          top: 0
+          left: 50%
+          transform: translateX(-50%)
+          width: 1px 
+          height: 100%
+          background: #efefef
+        & .block 
+          padding: 15px 0
+          & a 
+            & .fas 
+              +solid 
+              font-size: 24px 
+              color: #c7c9ce
+              transition: .3s linear 
+              &:hover
+                color: #6d6e71
+

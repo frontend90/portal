@@ -168,6 +168,10 @@
                   font-size: 16px
                   &::before
                     font-size: 50px 
+  .projects 
+    & .projects-nav
+      & a 
+        padding: 5px 15px 
 @media screen and ( max-width: 660px )
   .header 
     & .header-top 
@@ -202,6 +206,27 @@
             &:hover::before
               opacity: 0
               visibility: hidden 
+@media screen and ( max-width: 595px )
+  .projects 
+    & .projects-nav
+      display: flex 
+      flex-wrap: wrap
+      justify-content: center
+      & a 
+        padding: 5px 15px 
+        flex-basis: 20%
+        white-space: nowrap
+        &:last-of-type
+          margin-top: 10px 
+@media screen and ( max-width: 535px )
+  .projects 
+    & .projects-nav
+      display: block 
+      & a 
+        display: block 
+        margin-left: 0
+        &:last-of-type
+          margin-top: 0 
 @media screen and ( max-width: 475px )
   .header 
     & .header-slider-wrap 
@@ -235,6 +260,15 @@
             margin-left: 0
             & h6 
               font-size: 20px 
+  .projects 
+    & .title 
+      & .img 
+        display: none 
+      & .content 
+        text-align: center
+        margin-left: 0
+        & h5 
+          font-size: 30px 
 @media screen and ( max-width: 400px )
   .about 
     & .about-wrap 
