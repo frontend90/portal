@@ -1,0 +1,65 @@
+.map 
+  background: url(../img/map/bg.png) no-repeat 
+  background-size: cover 
+  background-position: center 
+  height: 495px 
+  & .marker 
+    padding-top: 90px
+    margin-left: 56% 
+    & .fas 
+      +solid 
+      font-size: 90px 
+  & .map-social 
+    display: flex 
+    justify-content: center
+    align-items: center
+    margin-top: 140px 
+    & .block 
+      position: relative
+      margin-left: 10px 
+      &:first-of-type
+        margin-left: 0
+      &:hover .overlay 
+        opacity: 1
+        visibility: visible
+        transition: opacity 1s
+      & a 
+        & .fas 
+          +solid
+          width: 60px 
+          height: 60px 
+          border-radius: 10px 
+          background: #ffffff
+          display: flex 
+          align-items: center
+          justify-content: center
+          border: 1px solid #dbdbdb
+          box-shadow: 0 0 40px 0 rgba(#111111,.13)
+          font-size: 40px 
+          color: #6d6e71
+          transition: .3s linear 
+          &:hover
+            background: #1fa9e0
+            color: #ffffff
+      & .overlay 
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: calc(100% + 12px)
+        background: #ffffff
+        border-radius: 5px 
+        padding: 20px 25px 
+        border: 1px solid #dbdbdb
+        box-shadow: 0 0 40px 0 rgba(#111111,.13)
+        white-space: nowrap
+        opacity: 0
+        visibility: hidden 
+        &::before
+          content: ''
+          position: absolute
+          bottom: -12px 
+          left: 50%
+          transform: translateX(-50%)
+          border-top: 12px solid #ffffff
+          border-left: 15px solid transparent 
+          border-right: 15px solid transparent 
